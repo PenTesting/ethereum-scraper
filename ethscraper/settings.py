@@ -14,7 +14,7 @@ BOT_NAME = 'ethscraper'
 ETH_JSON_RPC_URL = 'https://mainnet.infura.io/<your_api_key>'
 # ETH_JSON_RPC_URL = 'http://localhost:8545'
 START_BLOCK = 0
-END_BLOCK = 10
+END_BLOCK = 999
 # Possible values: csv, xml, json, jsonlines, pickle, marshal
 FEED_FORMAT = 'csv'
 
@@ -37,7 +37,7 @@ DOWNLOADER_MIDDLEWARES = {
 RETRY_TIMES = 10
 RETRY_HTTP_CODES = [500, 503, 504, 408]
 
-CONCURRENT_REQUESTS = 20
+CONCURRENT_REQUESTS = 1
 
 # Configure a delay for requests for the same website (default: 0)
 # See http://scrapy.readthedocs.org/en/latest/topics/settings.html#download-delay
