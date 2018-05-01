@@ -4,7 +4,7 @@ def hex_to_dec(str):
     try:
         return int(str, 16)
     except ValueError:
-        print "Not a hex string %s" % str
+        print ("Not a hex string %s" % str)
         return str
 
 
