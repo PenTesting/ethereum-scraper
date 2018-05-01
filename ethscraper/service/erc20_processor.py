@@ -24,7 +24,7 @@ class EthErc20Processor(object):
 
         topics = tx_receipt_log.topics
         if len(topics) < 1:
-            print "Topics are empty in log {} of transaction {}".format(tx_receipt_log.log_index, tx_receipt_log.transaction_hash)
+            print ("Topics are empty in log {} of transaction {}".format(tx_receipt_log.log_index, tx_receipt_log.transaction_hash))
             return None
 
         if topics[0] == TRANSFER_EVENT_TOPIC:
